@@ -1,0 +1,45 @@
+.mainsubscribe{
+    align-items: center;
+    background:$primary-color;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainsubscribe__tittle{
+    font-family: $second-font-family;
+    color:white;
+    font-size: 30px;
+}
+
+.mainsubscribe__input{
+
+        border: none;
+        width: 543px;
+        height: 53px;
+        padding: 0px 20px;
+        &::placeholder{
+            color: lightgray;
+        }
+}
+
+.mainsubscribe__button{
+    background: #DB4639;
+    border: none;
+    color: white;
+    width: 90px;
+    height: 53px;
+    
+}
+
+.mainsubscribe__container{
+    margin: 0px 0px 50px;
+}
+@media (max-width: $breakpoint-sm){
+
+    .mainsubscribe__container{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+}

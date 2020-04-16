@@ -1,0 +1,125 @@
+.mainfeature{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    background: #ffdb98;
+}
+
+
+.mainfeature__title{
+
+    font-size: 40px;
+    font-family: $second-font-family;
+    margin: 0 auto;
+    
+}
+
+.mainfeature__containers{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto 100px;
+    z-index:1;
+    justify-content: center;
+
+
+}
+
+.mainfeature__info{
+
+    width: 230px;
+    height: 418px;
+    background: #A3BF55;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 18px;
+    margin: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+
+}
+
+.mainfeature__info--orange{
+    background:#FFAE0F;
+}
+
+.mainfeature__info--pink{
+    background: #FF7AD5;
+}
+
+.mainfeature__text--tittle{
+    color: white;
+    margin: 90px 0px 0px 0px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.mainfeature__circle{
+    background-color: #577400;
+    width: 140px;
+    height: 140px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    z-index: 1;
+    margin-top: -60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainfeature__circle--orange{
+    background-color:#C18101;
+    width: 140px;
+    height: 140px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    z-index: 1;
+    margin-top: -60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainfeature__circle--pink{
+    background-color:#CF51A8;
+    width: 140px;
+    height: 140px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    z-index: 1;
+    margin-top: -60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainfeature__text{
+   margin: 40px 0px 15px 15px;
+}
+
+.mainfeature__icono{
+    width: 45px;
+}
+
+
+.mainfeature__icono--orange{
+    width: 65px;
+}
+
+.mainfeature__icono--pink{
+    width: 55px;
+}
+
+.mainfeature__textcontainer{
+    padding: 0 15px;
+    font-size: .9em;
+
+}
+

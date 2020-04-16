@@ -1,0 +1,61 @@
+.mainfooter{
+    background-color: white;
+    padding: 20px 0px;
+
+  }
+
+  .mainfooter__container{
+    display: flex;
+}
+
+.mainfooter__socialMedia{
+    flex-direction: column;
+    width: 280px;
+}
+
+.mainfooter__logos{
+    padding: 0px 45px;
+    margin: 10px 0px;
+}
+
+.mainfooter__malibu{
+   margin: 30px 0px;
+}
+
+.mainfooter__redes{
+   padding: 0px 3px;
+   color: white;
+ }
+
+.mainfooter__information{
+  flex-direction:column;
+  width: 30%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainfooter__links{
+text-decoration: none;
+color: black;
+font-size: .8em;
+
+
+}
+
+@media (max-width: $breakpoint-sm){
+
+  .mainfooter__container{
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      }
+  .mainfooter__socialMedia{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    }
+}

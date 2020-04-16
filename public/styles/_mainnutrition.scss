@@ -1,0 +1,123 @@
+    .mainnutrition{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainnutrition__title{
+    font-family: $second-font-family;
+    color:black;
+    font-size: 25px;
+}
+
+.mainnutrition__img{
+   display: flex;
+   flex-direction: column;
+
+}
+
+.mainnutrition__container{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ }
+
+.mainnutrition__product{
+ display: flex;
+ flex-direction: row;
+ align-items: center;;
+}
+
+.mainnutrition__table{
+width: 523px;
+height: 435px;
+background: #E4E4E4;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+padding: 34px 75px;
+}
+
+.mainnutrition__button{
+color: white;
+background: #DB4639;
+border: none;
+width: 206px;
+height: 53px;
+margin: 15px 0;
+font-size: 15px;
+}
+
+.mainnutrition__quantity{
+position: absolute;
+width: 77px;
+height: 388px;
+background: #577400;
+border-radius: 31px;
+z-index: 1;
+margin-left: -110px;
+margin-top: -10px;
+text-align: center;
+color: white;
+font-size: .8em;
+
+}
+
+.mainnutrition__hr{
+    margin: 10px 0 0 ;
+    padding: 0 15px;  
+}
+
+.mainnutrition__info{
+  color: #577400;
+  font-size: 25px;
+    
+}
+
+.mainnutrition__imgtres{
+    display: flex;
+    flex-direction: column;
+      
+  }
+    
+.mainnutrition__img{
+    display: flex;
+    flex-direction: row;
+         
+     }
+
+@media (max-width: $breakpoint-sm){
+    .mainnutrition__container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.mainnutrition__imgvisiblenaranja{
+    display: none;
+         
+     }
+
+.mainnutrition__imgvisiblemora{
+display: none;
+             
+}
+
+.mainnutrition__quantity--naranja{
+    background: #FAAA0C;
+
+             
+    }
+
+    .mainnutrition__quantity--mora{
+        background: #693A5A;
+    
+                 
+        }
+
+.mainnutrition__info--mora{
+    color:#693A5A;
+                         
+    }
+    .mainnutrition__info--naranja{
+        color:#FAAA0C;
+                             
+        }

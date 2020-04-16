@@ -1,0 +1,67 @@
+.mainpublicity{
+width: 100%;
+
+&__top{
+    display: flex;
+}
+&__top img{
+    width: 50%;
+}
+
+&__tres{
+    display: flex;
+    width: 100%;
+}
+
+&__textcontainer{
+    position: relative;
+    font-family:$second-font-family; 
+    color: white;
+    text-align: center;
+}
+
+&__text1{
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    font-size: 40px;
+}
+
+&__text2{
+    position: absolute;
+    top: 80px;
+    right: 150px;
+    font-size: 80px;
+
+    
+}
+
+&__text3{
+    position: absolute;
+    bottom: 150px;
+    font-size: 50px;
+    color: black;
+    right: 100px;
+   
+}
+
+
+@media (max-width: $breakpoint-sm){
+
+    &__text1{
+         font-size: 20px;
+         right: 80px;  
+      }
+    &__text2{
+        font-size: 40px;
+        right: 110px;
+        top: 50px;
+     }
+     &__text3{
+        font-size: 25px;
+        bottom: 70px;
+        right: 73px;
+     }
+    }
+  }
+

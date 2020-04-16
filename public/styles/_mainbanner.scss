@@ -1,0 +1,59 @@
+.mainbanner{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.mainbanner__banner{
+    width: 100%;
+}
+
+.mainbanner__text{
+    font-family: $second-font-family;
+    color:white;
+}
+
+.mainbanner__container{
+    position: absolute;
+    margin-left: 50px;
+    font-size: 300%;
+    text-align: center;
+    width: 598px;
+    bottom: 35%;
+    left: 7%;
+}
+.mainbanner__button{
+    position:absolute;
+    top: 220px;
+    padding: 20px 30px;
+    left: 40%;
+    font-family: $primary-font-family;
+    font-size: $font-size;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
+}
+
+@media (max-width: $breakpoint-sm){
+
+  .mainbanner__text{
+        font-size: 20px;
+        margin-right: 180px;
+        width: 180px;
+        height: 80px;
+
+    }
+    .mainbanner__container{
+        width: 180px;
+        height: 80px; 
+    }
+    .mainbanner__button{
+        padding: 10px 20px;
+        font-size: 10px;
+        top: 110px;
+        left: 50px; 
+    }
+
+}
