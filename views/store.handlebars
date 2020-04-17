@@ -1,1 +1,73 @@
-<p>HOLA</p>
+<div class="store">
+    <header class="store__header">
+        <h1 class="store__title">
+            Productos
+        </h1>
+        <nav class="store__sort">
+            Ordenar por
+            <select class="store__sortcontainer">
+                <option value="Mayor precio primero">Mayor precio primero</option>
+                <option value="Más vendidos">Más vendidos</option>
+                <option value="Menor precio primero">Menor precio primero</option>
+                <option value="Nuevos productos">Nuevos productos</option>
+            </select>
+        </nav>
+        <hr>
+    </header>
+
+    <section class="store__section">
+        <div class="store__filtercontainer">
+            <h1>Filtrar por</h1>
+            <hr>
+            <p class="store__filtertitle">
+                <strong>Productos</strong>
+            </p>
+            <div class="store__filter">
+                <label> <input type="checkbox" class="store__checkbok" value="first_checkbox">Jugos naturales</label>
+                <label> <input type="checkbox" class="store__checkbok" value="first_checkbox">Infusiones</label>
+                <label> <input type="checkbox" class="store__checkbok" value="first_checkbox">Maní y mezclas</label>
+                <label> <input type="checkbox" class="store__checkbok" value="first_checkbox">Barras de cereal</label>
+            </div>
+            <hr>
+            <p class="store__filtertitle">
+                <strong>Precio máximo</strong>
+            </p>
+            <nav class="store__filterprice">
+                Precio
+                <select class="store__price">
+                    <option value="2000">$2000</option>
+                    <option value="3000">$3000</option>
+                    <option value="5000">$5000</option>
+                    <option value="7000">$7000</option>
+                </select>
+            </nav>
+        </div>
+
+        <div class="store__products">
+            {{#each products}}
+            <div class="product">
+                <header class="product__header">
+                    <a href="#">
+                        <img class="product__image" src="{{ img }}" alt="{{ name }}">
+                    </a>
+                </header>
+
+                <section class="product__section">
+                    <p class="product__name">{{ name }}</p>
+                    <p class="product__price">
+                        <strong>$ {{ price }}</strong>
+                    </p>
+                </section>
+
+                <footer class="product__footer">
+                    <button class="product__button">
+                        <strong>Agregar</strong>
+                    </button>
+                </footer>
+            </div>
+            {{/each}}
+
+
+        </div>
+    </section>
+</div>

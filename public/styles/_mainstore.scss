@@ -1,0 +1,28 @@
+.store__sort{
+    display: flex;
+    margin: 0 0 0 auto;
+    width: 100%;
+}
+
+.store__filter{
+    display: flex;
+    flex-direction: column;
+}
+
+.store__filtercontainer{
+    width: 20%;
+}
+
+.store__products{
+    display: flex;
+    width: 75%;
+    max-width: 75%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.store__section{
+    display: flex;
+    flex-direction: row;
+}
