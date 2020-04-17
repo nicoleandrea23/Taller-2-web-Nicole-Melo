@@ -4,8 +4,20 @@ const express= require ('express');
 //importar path pag absoluta
 const path= require ('path');
 
+//importar expresshandlebars
+const exphbs = require('express-handlebars');
+
+//Importar productos
+const products = require('./products');
+
 //instanciar servidor express
 const app= express();
+
+//Registrar motor de render para handle-bars
+app.engine('handlebars', exphbs());
+
+//Use el motor de render handle-bars
+app.set('view engine', 'handlebars');
 
 //hacer publica la carpeta para que se muestre el style
 app.use(express.static('public'));
@@ -17,7 +29,18 @@ app.get('/', function(req, res){
     //res.send('hola en el chrome');
 
     //se agrega taller 1
-    response.senFile(path.join(__dirname,'/public/index.html'))
+    res.senFile(path.join(__dirname,'/public/index.html'))
+});
+
+//Ruta para la lista de productos con handlebars
+app.get('/tienda', function (req, res){
+    //Objeto contexto
+    var context = {
+        products: products,
+    };
+
+    //Renderizar vista
+    res.render('store');
 });
 
 app.get('/contacto', function(req, res){ 
