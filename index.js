@@ -43,6 +43,23 @@ app.get('/tienda', function (req, res){
     res.render('store');
 });
 
+//Ruta para especificaciones de un producto con handlebars
+app.get('/product/:name/:id', function (req, res){
+    //Objeto contexto
+    var context = {};
+
+    //Buscar en la base de datos el producto correspondiente
+    //Pasar las variables de ese elemento al contexto
+    context = products.find(function (elem){
+        if(elem.id == req.params.id){
+            return true;
+        }
+    });
+
+    //Renderizar vista
+    res.render('product', context);
+});
+
 app.get('/contacto', function(req, res){ 
     console.log('hola en la contacto');
     res.send('pag de contacto');

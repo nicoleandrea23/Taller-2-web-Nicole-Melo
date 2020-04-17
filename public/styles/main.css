@@ -796,4 +796,41 @@ button {
   display: -ms-flexbox;
   display: flex;
 }
+
+.product {
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 318px;
+  height: 413px;
+  background: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product__button {
+  color: white;
+  background: #DB4639;
+  border: none;
+  width: 190px;
+  height: 53px;
+  margin: 15px 0;
+  font-size: 15px;
+}
+
+.product__price {
+  text-align: center;
+}
+
+.product__image {
+  width: 220px;
+  height: 220px;
+}
 /*# sourceMappingURL=main.css.map */
