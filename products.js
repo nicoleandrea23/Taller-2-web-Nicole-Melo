@@ -11,6 +11,7 @@ const products = [
         img:'/images/products/jugogranadilla.png',
         name: 'Jugo de granadilla',
         price: 7000, 
+       
     },
 
     {
@@ -18,6 +19,7 @@ const products = [
         img:'/images/products/jugonaranja.png',
         name: 'Jugo de naranja',
         price: 7000, 
+        
     },
 
     {
@@ -39,13 +41,15 @@ const products = [
         img:'/images/products/manipasas.png',
         name: 'Maní con pasas',
         price: 5000, 
+        type:'mani',
     },
 
     {
         id: 6,
         img:'/images/products/manidulce.png',
         name: 'Maní dulce',
-        price: 5000, 
+        price: 5000,
+        type:'mani', 
     },
 
     {
@@ -53,13 +57,16 @@ const products = [
         img:'/images/products/manisal.png',
         name: 'Maní con sal',
         price: 5000, 
+        type:'mani',
     },
 
     {
         id: 8,
         img:'/images/products/manimixto.png',
         name: 'Maní mixto',
-        price: 5000, 
+        price: 5000,
+        type:'mani',
+ 
     },
 
     {
@@ -67,20 +74,23 @@ const products = [
         img:'/images/products/manichocolate.png',
         name: 'Maní con chocolate',
         price: 5000, 
+        type:'mani',
     },
 
     {
         id: 10,
         img:'/images/products/temanzanilla.png',
         name: 'Té de manzanilla',
-        price: 2000, 
+        price: 2000,
+        type:'te', 
     },
 
     {
         id: 11,
         img:'/images/products/tefrutosrojos.png',
         name: 'Té de frutos rojos',
-        price: 2000, 
+        price: 2000,
+        type:'te',  
     },
 
     {
@@ -94,7 +104,8 @@ const products = [
         id: 13,
         img:'/images/products/tementa.png',
         name: 'Té de menta',
-        price: 2000, 
+        price: 2000,
+        type:'te',  
     },
 
     {
@@ -102,6 +113,7 @@ const products = [
         img:'/images/products/teuva.png',
         name: 'Té de uva',
         price: 2000, 
+        type:'te', 
     },
 
     {
@@ -109,13 +121,15 @@ const products = [
         img:'/images/products/barrafrutos.png',
         name: 'Barra de frutos secos',
         price: 3000, 
+        type:'barras', 
     },
 
     {
         id: 16,
         img:'/images/products/barramiel.png',
         name: 'Barra de miel y avellana',
-        price: 3000, 
+        price: 3000,
+        type:'barras',  
     },
 
     {
@@ -123,13 +137,15 @@ const products = [
         img:'/images/products/barracoco.png',
         name: 'Barra de coco',
         price: 3000, 
+        type:'barras', 
     },
 
     {
         id: 18,
         img:'/images/products/barrachocolate.png',
         name: 'Barra de chocolate',
-        price: 3000, 
+        price: 3000,
+        type:'barras',  
     },
 
     {
@@ -137,6 +153,7 @@ const products = [
         img:'/images/products/barralimon.png',
         name: 'Barra de limón',
         price: 3000, 
+        type:'barras', 
     },
 
 ];

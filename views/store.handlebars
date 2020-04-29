@@ -12,9 +12,9 @@
                 <option value="Nuevos productos">Nuevos productos</option>
             </select>
         </nav>
-        <hr>
+        
     </header>
-
+    <hr>
     <section class="store__section">
         <div class="store__filtercontainer">
             <h1>Filtrar por</h1>
@@ -45,7 +45,7 @@
 
         <div class="store__products">
             {{#each products}}
-            <div class="product">
+            <div class="product type--{{type}}">
                 <header class="product__header">
                     <a href="#">
                         <img class="product__image" src="{{ img }}" alt="{{ name }}">
