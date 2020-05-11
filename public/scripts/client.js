@@ -37,3 +37,16 @@ bar.addEventListener('change', function(e){
     url = url + '?type_eq=' + bar.value;
     location.href = url;
 });
+
+
+// seleccionamos el elemento select
+var sort = document.querySelector('.store__sortcontainer');
+// agregamos el listener de cambio
+sort.addEventListener('change', function(ev){
+  // creamos la variable url partiendo del pathname "/tienda" o la ruta en la que estemos
+  var url = location.pathname;
+  // le agregamos el filtro ?price_lt y el valor
+  url = url + '?sort=' + sort.value;
+  // navegamos a la nueva ruta con el filtro
+  location.href = url;
+});

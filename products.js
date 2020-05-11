@@ -5,6 +5,9 @@ const products = [
         name: 'Jugo de fresa',
         price: 7000, 
         type: 'jugos',
+        popularity: 9,
+        new: 6,
+
     },
 
     {
@@ -13,7 +16,8 @@ const products = [
         name: 'Jugo de granadilla',
         price: 7000, 
         type: 'jugos',
-       
+        popularity: 13,
+        new: 1,
     },
 
     {
@@ -22,6 +26,9 @@ const products = [
         name: 'Jugo de naranja',
         price: 7000, 
         type: 'jugos',
+        popularity: 5,
+        new: 14,
+
         
     },
 
@@ -31,6 +38,10 @@ const products = [
         name: 'Jugo de mora',
         price: 7000, 
         type: 'jugos',
+        popularity: 17,
+        new: 10,
+
+
     },
 
     {
@@ -39,6 +50,9 @@ const products = [
         name: 'Jugo de kiwi',
         price: 7000, 
         type: 'jugos',
+        popularity: 1,
+        new: 2,
+
     },
 
     {
@@ -47,6 +61,9 @@ const products = [
         name: 'Maní con pasas',
         price: 5000, 
         type:'mani',
+        popularity: 10,
+        new: 15,
+
     },
 
     {
@@ -54,7 +71,10 @@ const products = [
         img:'/images/products/manidulce.png',
         name: 'Maní dulce',
         price: 5000,
-        type:'mani', 
+        type:'mani',
+        popularity: 14,
+        new: 11,
+ 
     },
 
     {
@@ -63,6 +83,10 @@ const products = [
         name: 'Maní con sal',
         price: 5000, 
         type:'mani',
+        popularity: 18,
+        new: 18,
+
+
     },
 
     {
@@ -71,6 +95,9 @@ const products = [
         name: 'Maní mixto',
         price: 5000,
         type:'mani',
+        popularity: 6,
+        new: 3,
+
  
     },
 
@@ -80,6 +107,9 @@ const products = [
         name: 'Maní con chocolate',
         price: 5000, 
         type:'mani',
+        popularity: 2,
+        new: 7,
+
     },
 
     {
@@ -88,6 +118,9 @@ const products = [
         name: 'Té de manzanilla',
         price: 2000,
         type:'te', 
+        popularity: 15,
+        new: 19,
+
     },
 
     {
@@ -95,7 +128,10 @@ const products = [
         img:'/images/products/tefrutosrojos.png',
         name: 'Té de frutos rojos',
         price: 2000,
-        type:'te',  
+        type:'te',
+        popularity: 7, 
+        new: 16,
+ 
     },
 
     {
@@ -103,7 +139,11 @@ const products = [
         img:'/images/products/tejengibre.png',
         name: 'Té de jengibre',
         price: 2000, 
-        type:'te',  
+        type:'te', 
+        popularity: 20,
+        new: 12,
+
+ 
 
     },
 
@@ -113,6 +153,9 @@ const products = [
         name: 'Té de menta',
         price: 2000,
         type:'te',  
+        popularity: 3,
+        new: 8,
+
     },
 
     {
@@ -120,7 +163,10 @@ const products = [
         img:'/images/products/teuva.png',
         name: 'Té de uva',
         price: 2000, 
-        type:'te', 
+        type:'te',
+        popularity: 11, 
+        new: 4,
+
     },
 
     {
@@ -129,6 +175,9 @@ const products = [
         name: 'Barra de frutos secos',
         price: 3000, 
         type:'barras', 
+        popularity: 16,
+        new: 20,
+
     },
 
     {
@@ -136,7 +185,11 @@ const products = [
         img:'/images/products/barramiel.png',
         name: 'Barra de miel y avellana',
         price: 3000,
-        type:'barras',  
+        type:'barras',
+        popularity: 19,
+        new: 13,
+
+  
     },
 
     {
@@ -145,6 +198,9 @@ const products = [
         name: 'Barra de coco',
         price: 3000, 
         type:'barras', 
+        popularity: 4,
+        new: 17,
+
     },
 
     {
@@ -152,7 +208,10 @@ const products = [
         img:'/images/products/barrachocolate.png',
         name: 'Barra de chocolate',
         price: 3000,
-        type:'barras',  
+        type:'barras', 
+        popularity: 8, 
+        new: 9,
+
     },
 
     {
@@ -160,7 +219,10 @@ const products = [
         img:'/images/products/barralimon.png',
         name: 'Barra de limón',
         price: 3000, 
-        type:'barras', 
+        type:'barras',
+        popularity: 12, 
+        new: 5,
+
     },
 
 ];

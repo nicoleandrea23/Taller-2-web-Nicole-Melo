@@ -39,6 +39,13 @@ function configureRoutes(app, db) {
 
         var sortings = {};
 
+        if(req.query.sort == 'price_desc'){
+          sortings.price = -1;
+        }
+        if(req.query.sort == 'price_asc'){
+          sortings.price = 1;
+        }
+
         // Get the documents collection
         const collection = db.collection('products');
         // Find some documents

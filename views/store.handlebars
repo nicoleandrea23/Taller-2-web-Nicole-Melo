@@ -6,10 +6,11 @@
         <nav class="store__sort">
             Ordenar por
             <select class="store__sortcontainer">
-                <option value="Mayor precio primero">Mayor precio primero</option>
-                <option value="Más vendidos">Más vendidos</option>
-                <option value="Menor precio primero">Menor precio primero</option>
-                <option value="Nuevos productos">Nuevos productos</option>
+                <option class="store__sortoptions" value="" disabled="true" selected="true">Select an option...</option>
+                <option value="price_desc">Mayor precio primero</option>
+                <option value="price_asc">Menor precio primero</option>
+                <option value="new_products">Nuevos productos</option>
+                  <option value="popularity">popularidad</option>
             </select>
         </nav>
         
@@ -35,6 +36,7 @@
             <nav class="store__filterprice">
                 Precio
                 <select class="store__price">
+                    <option class="store__sortoptions" value="" disabled="true" selected="true">Select an option...</option>
                     <option value="2000">$2000</option>
                     <option value="3000">$3000</option>
                     <option value="5000">$5000</option>
