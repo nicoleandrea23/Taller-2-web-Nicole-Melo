@@ -1,17 +1,21 @@
+//importar modulos
+const MongoClient = require('mongodb').MongoClient;
+const assert = require('assert');
 //importar express
-const express= require ('express');
-
-//importar path pag absoluta
-const path= require ('path');
-
+const express = require('express');
 //importar expresshandlebars
 const exphbs = require('express-handlebars');
 
+
 //Importar productos
-const products = require('./products');
+const configureRoutes = require('./routes');
+//importar path pag absoluta
+const path = require('path');
 
 //instanciar servidor express
-const app= express();
+const app = express();
+//hacer publica la carpeta para que se muestre el style
+app.use(express.static('public'));
 
 //Registrar motor de render para handle-bars
 app.engine('handlebars', exphbs());
@@ -19,57 +23,27 @@ app.engine('handlebars', exphbs());
 //Use el motor de render handle-bars
 app.set('view engine', 'handlebars');
 
-//hacer publica la carpeta para que se muestre el style
-app.use(express.static('public'));
+// Connection URL
+const url = 'mongodb://localhost:27017';
 
+// Database Name
+const dbName = 'store';
 
-//configurar ruta inicial
-app.get('/', function(req, res){ 
-    //console.log('hola en la consola');
-    //res.send('hola en el chrome');
+// Create a new MongoClient
+const client = new MongoClient(url);
 
-    //se agrega taller 1
-    res.senFile(path.join(__dirname,'/public/index.html'))
+// Use connect method to connect to the Server
+client.connect(function (err) {
+    assert.equal(null, err);
+    console.log("Connected successfully to server");
+
+    const db = client.db(dbName);
+
+    configureRoutes(app, db);
 });
 
-//Ruta para la lista de productos con handlebars
-app.get('/tienda', function (req, res){
-    //Objeto contexto
-    var context = {
-        products: products,
-    };
-
-    //Renderizar vista
-    res.render('store',context);
-});
-
-//Ruta para especificaciones de un producto con handlebars
-app.get('/product/:name/:id', function (req, res){
-    //Objeto contexto
-    var context = {};
-
-    //Buscar en la base de datos el producto correspondiente
-    //Pasar las variables de ese elemento al contexto
-    context = products.find(function (elem){
-        if(elem.id == req.params.id){
-            return true;
-        }
-    });
-
-    //Renderizar vista
-    res.render('product', context);
-});
-
-app.get('/contacto', function(req, res){ 
-    console.log('hola en la contacto');
-    res.send('pag de contacto');
-});
-
-app.get('/nosotros', function(req, res){ 
-    res.send('texto bien cool');
-});
 
 //iniciar servidor en puerto
-app.listen(3000,function(){ 
+app.listen(3000, function () {
     console.log('servidor iniciando en puerto 3000');
 });

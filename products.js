@@ -4,6 +4,7 @@ const products = [
         img:'/images/products/jugofresa.png',
         name: 'Jugo de fresa',
         price: 7000, 
+        type: 'jugos',
     },
 
     {
@@ -11,6 +12,7 @@ const products = [
         img:'/images/products/jugogranadilla.png',
         name: 'Jugo de granadilla',
         price: 7000, 
+        type: 'jugos',
        
     },
 
@@ -19,6 +21,7 @@ const products = [
         img:'/images/products/jugonaranja.png',
         name: 'Jugo de naranja',
         price: 7000, 
+        type: 'jugos',
         
     },
 
@@ -27,6 +30,7 @@ const products = [
         img:'/images/products/jugomora.png',
         name: 'Jugo de mora',
         price: 7000, 
+        type: 'jugos',
     },
 
     {
@@ -34,6 +38,7 @@ const products = [
         img:'/images/products/jugokiwi.png',
         name: 'Jugo de kiwi',
         price: 7000, 
+        type: 'jugos',
     },
 
     {
@@ -98,6 +103,8 @@ const products = [
         img:'/images/products/tejengibre.png',
         name: 'Té de jengibre',
         price: 2000, 
+        type:'te',  
+
     },
 
     {
