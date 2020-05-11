@@ -46,6 +46,14 @@ function configureRoutes(app, db) {
           sortings.price = 1;
         }
 
+        if(req.query.sort == 'new_products'){
+            sortings.new = 1;
+          }
+
+          if(req.query.sort == 'popularity'){
+            sortings.popularity = 1;
+          }
+
         // Get the documents collection
         const collection = db.collection('products');
         // Find some documents
