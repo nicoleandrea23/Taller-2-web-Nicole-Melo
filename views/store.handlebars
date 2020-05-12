@@ -4,9 +4,9 @@
             Productos
         </h1>
         <nav class="store__sort">
-            Ordenar por
+            <strong>Ordenar por</strong> 
             <select class="store__sortcontainer">
-                <option class="store__sortoptions" value="" disabled="true" selected="true">Select an option...</option>
+                <option class="store__sortoptions" value="" disabled="true" selected="true">Selecciona una opción</option>
                 <option value="price_desc">Mayor precio primero</option>
                 <option value="price_asc">Menor precio primero</option>
                 <option value="new_products">Nuevos productos</option>
@@ -15,11 +15,9 @@
         </nav>
         
     </header>
-    <hr>
+   
     <section class="store__section">
         <div class="store__filtercontainer">
-            <h1>Filtrar por</h1>
-            <hr>
             <p class="store__filtertitle">
                 <strong>Productos</strong>
             </p>
@@ -29,14 +27,12 @@
                 <label> <input type="checkbox" class="store__penaut" value="mani">Maní y mezclas</label>
                 <label> <input type="checkbox" class="store__bar" value="barras">Barras de cereal</label>
             </div>
-            <hr>
             <p class="store__filtertitle">
                 <strong>Precio máximo</strong>
             </p>
             <nav class="store__filterprice">
-                Precio
                 <select class="store__price">
-                    <option class="store__sortoptions" value="" disabled="true" selected="true">Select an option...</option>
+                    <option class="store__sortoptions" value="" disabled="true" selected="true">Selecciona una opción</option>
                     <option value="2000">$2000</option>
                     <option value="3000">$3000</option>
                     <option value="5000">$5000</option>
@@ -49,7 +45,7 @@
             {{#each products}}
             <div class="product type--{{type}}">
                 <header class="product__header">
-                    <a href="#">
+                    <a href="/product/{{ name }}/{{ _id }}">
                         <img class="product__image" src="{{ img }}" alt="{{ name }}">
                     </a>
                 </header>

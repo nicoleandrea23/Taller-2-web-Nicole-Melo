@@ -1,0 +1,53 @@
+<section class="form">
+    <header class="form__container">
+        <div class="form__main">
+            <h1 class="form__title">
+                Datos del comprador 
+            </h1>
+            <form class="form__structure" action="/form" method="POST">
+                <label class="form__label">
+                    <strong>Nombre</strong> 
+                    <input class="form__input" type="text" name="name" required="true">
+                </label>
+                <label class="form__label">
+                    <strong>Apellido</strong> 
+                    <input class="form__input" type="text" name="last_name" required="true">
+                </label>
+                <label class="form__label">
+                    <strong>Documento de indentificación</strong> 
+                    <select class="form__select" name="id_document" required="true">
+                        <option value="" disabled="true" selected="true">Selecciona una opción
+                        <option value="C.C">C.C</option>
+                        <option value="C.E">C.E</option>
+                        <option value="N.I.T">N.I.T</option>
+                    </select>
+                </label>
+                <label class="form__label">
+                    <strong>Número de indentificación</strong> 
+                    <input class="form__input" type="text" name="id_number" required="true">
+                </label>
+                <label class="form__label">
+                     <strong>Dirección</strong> 
+                    <input class="form__input" type="text" name="address" required="true">
+                </label>
+                <label class="form__label">
+                    <strong>Método de pago</strong> 
+                    <select class="form__select" name="payment_method" required="true">
+                        <option value="" disabled="true" selected="true">Selecciona una opción
+                        </option>
+                        <option value="Credit_Card">Tarjeta de crédito</option>
+                        <option value="Online_Banking">Tarjeta éxito</option>
+                        <option value="Wallets">Pago PS</option>
+                    </select>
+                </label>
+                <label class="form__label"> 
+                    <strong>Número de método de pago</strong> 
+                    <input class="form__input" type="text" name="payment_method_number" required="true">
+                    </label>
+                <button class="form__button">
+                    <strong>Finalizar compra</strong> 
+                </button>
+            </form>
+        </div>
+    </header>
+</section>

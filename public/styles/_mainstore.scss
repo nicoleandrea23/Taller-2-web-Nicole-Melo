@@ -2,6 +2,7 @@
 position: absolute;
   right:0;
   margin-top: 35px;
+  margin-right: 24px;
 }
 
 .store__filter{
@@ -10,16 +11,18 @@ position: absolute;
 }
 
 .store__filtercontainer{
-    width: 20%;
+    width: 200px;
+    height: 300px;
+    
 }
 
 .store__products{
     display: flex;
-    width: 75%;
-    max-width: 75%;
+    width: 100%;
+    max-width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
-    
+    padding-right: 130px;
 }
 
 .store__section{
@@ -29,4 +32,30 @@ position: absolute;
 
 .store__header{
     display: flex;
+    
+
 }
+
+.store{
+    margin-left: 30px;
+    
+
+}
+
+.store__price{
+    border-radius: 5px;
+    border-style: none;
+    padding: 0 10px;
+    height:30px ;
+
+}
+
+.store__sortcontainer{
+    border-radius: 5px;
+    border-style: none;
+    padding: 0 10px;
+    margin-top: 20px;
+    height:30px ;
+}
+
+
