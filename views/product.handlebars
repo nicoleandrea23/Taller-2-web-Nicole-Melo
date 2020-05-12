@@ -1,20 +1,57 @@
-<div class="product">
-    <header class="product__header">
-        <a href="#">
-            <img class="product__image" src="{{ img }}" alt="{{ name }}">
-        </a>
-    </header>
+<section class="productfeature">
+    <h1 class="productfeature__title"><strong>{{ name }}</strong></h1>
+    <div class="productfeature__main">
+        <div class="productfeature__image">
+            <img class="productfeature__img" src="{{ img }}" alt="{{ name }}">
+        </div>
+        <div class="productfeature__container">
+            <div class="productfeature__mainproduct">
+                <div class="productfeature__table">
+                    <div class="productfeature__quantity">
+                        <p>
+                            <br>
+                            186gr
+                            <br>
+                            Por
+                            <hr class="productfeature__hr">
+                            <br>
+                            80gr
+                            <br>
+                            Kcal
+                            <hr class="productfeature__hr">
+                            <br>
+                            15gr
+                            <br>
+                            Prot
+                            <hr class="productfeature__hr">
+                            <br>
+                            0gr
+                            <br>
+                            Gra
+                            <hr class="productfeature__hr">
+                            <br>
+                            40gr
+                            <br>
+                            Carb
+                            <hr class="productfeature__hr">
+                            <br>
+                            5gr
+                            <br>
+                            azu
+                        </p>
+                    </div>
+                    <p class="productfeature__info"><strong>Características</strong></p>
+                    <p class="productfeature__info"><strong>${{ price }}</strong></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad.
+                    </p>
+                    <button class="productfeature__button">
+                        <strong>Agregar</strong>
+                    </button>
+                </div>
+            </div>
 
-    <section class="product__section">
-        <p class="product__name">{{ name }}</p>
-        <p class="product__price">
-           <strong>$ {{ price }}</strong>
-        </p>
-    </section>
 
-    <footer class="product__footer">
-        <button class="product__button">
-           <strong>Agregar</strong> 
-        </button>
-    </footer>
-</div>
+        </div>
+    </div>
+</section>
