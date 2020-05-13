@@ -113,6 +113,18 @@ button {
   margin-right: 24px;
 }
 
+.mainheader__added {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  background: none;
+  border: none;
+  color: white;
+  margin-top: -24px;
+  right: 35,5px;
+}
+
 .mainbanner {
   width: 100%;
   display: -webkit-box;
@@ -907,7 +919,7 @@ button {
 .store__sort {
   position: absolute;
   right: 0;
-  margin: 15px 0;
+  margin: 10px 0;
   margin-right: 24px;
 }
 

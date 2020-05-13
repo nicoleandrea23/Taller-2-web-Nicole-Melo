@@ -46,7 +46,7 @@
             <div class="product type--{{type}}">
                 <header class="product__header">
                     <a href="/product/{{ name }}/{{ _id }}">
-                        <img class="product__image" src="{{ img }}" alt="{{ name }}">
+                        <img class="product__image" src="{{ img }}" alt="{{ name }}" data-id="{{ _id }}">
                     </a>
                 </header>
 
@@ -58,7 +58,7 @@
                 </section>
 
                 <footer class="product__footer">
-                    <button class="product__button">
+                    <button class="product__button" data-name="{{ name }}" data-price="{{ price }}" data-img="{{ img }}">
                         <strong>Agregar</strong>
                     </button>
                 </footer>

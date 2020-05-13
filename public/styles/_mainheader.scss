@@ -62,3 +62,13 @@
 .mainheader__searchShop{
   margin-right: 24px;  
 }
+
+.mainheader__added{
+  display: flex;
+  position: absolute;
+  background: none;
+  border: none;
+  color: rgb(255, 255, 255); 
+  margin-top: -24px;
+  right: 35,5px;
+}
