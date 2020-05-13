@@ -15,7 +15,6 @@ if (localStorage.getItem('cartList')) {
 cartButton.innerText = cartList.length;
 
 
-cartButton.addEventListener('click', renderCart);
 //renderCart();
 
 buttons.forEach(function (elem) {

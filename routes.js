@@ -93,7 +93,7 @@ function configureRoutes(app, db) {
         collection.find(filter).toArray(function (err, docs) {
             assert.equal(err, null);
 
-            console.log(docs)
+            
 
             if (docs.length == 0) {
                 res.redirect('/404');
@@ -124,15 +124,23 @@ function configureRoutes(app, db) {
 
     //Ruta para el formulario con handlebars
     app.get('/form', function (req, res) {
+        var context = {
+            showError: req.query.error,
+        }
         //Renderizar vista
-        res.render('form');
+        res.render('form', context);
     });
 
     //Recibir informacion del usuario
     app.post('/form', function (req, res) {
-        //Renderizar vista
-        res.send('test');
-    });
 
+    //req.body.products = JSON.parse(req.body.products);
+
+        const collection = db.collection('orders');
+        collection.insertOne(req.body);
+        //Renderizar vista
+        //res.send('test');
+        res.redirect('/tienda');
+    });
 }
 module.exports = configureRoutes;
